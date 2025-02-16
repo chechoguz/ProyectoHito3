@@ -12,6 +12,7 @@ CREATE TABLE usuarios (
     password TEXT NOT NULL,
     descripcion TEXT DEFAULT 'Escribe algo sobre ti...',
     imagen TEXT,
+    telefono VARCHAR(20),
     rol VARCHAR(20) DEFAULT 'user'
 );
 
@@ -36,3 +37,4 @@ CREATE TABLE detalle_pedidos (
     producto_id INTEGER REFERENCES productos(id),
     cantidad INTEGER NOT NULL
 );
+
